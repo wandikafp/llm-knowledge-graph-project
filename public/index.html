@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Conversational UI</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="chat-container">
+    <h2>Conversational Query</h2>
+    <div class="messages" id="messages"></div>
+    <input type="text" id="query" placeholder="Ask something..." />
+    <button onclick="sendMessage()">Send</button>
+    <div id="inline-buttom">
+        <label class="switch">
+            <input type="checkbox" id="toggleSwitch">
+            <span class="slider"></span>
+        </label>
+        <p id="status">Add to Graph is OFF</p>
+    </div>
+</div>
+<div id="sigma-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/2.4.0/sigma.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/graphology/0.25.4/graphology.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/graphology-layout-forceatlas2@0.10.1/webworker.min.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>
